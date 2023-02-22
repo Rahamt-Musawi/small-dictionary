@@ -14,8 +14,8 @@
     },
     methods: {
       speak() {
-        const msg = new SpeechSynthesisUtterance(this.$props.pronounce_word);
-        window.speechSynthesis.speak(msg);
+        const word_to_pronounce = new SpeechSynthesisUtterance(this.$props.pronounce_word);
+        window.speechSynthesis.speak(word_to_pronounce);
       }
     }
   }
