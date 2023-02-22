@@ -80,7 +80,8 @@ def handle_message(data):
         for synset in synsets:
             for lemma in synset.lemmas():
                 # syn.clear()
-                syn.append(lemma.name())    #add the synonyms
+                if lemma.name() not in syn:
+                    syn.append(lemma.name())    #add the synonyms
                 if lemma.antonyms():    #When antonyms are available, add them into the list
                     # ant.clear()
                     ant.append(lemma.antonyms()[0].name())

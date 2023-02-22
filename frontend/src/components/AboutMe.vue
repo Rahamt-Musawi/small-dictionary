@@ -8,15 +8,18 @@
       />
       <div class="flex flex-col">
         <h4 class="text-lg font-semibold text-center md:text-left">
-          Rahmatullah Musawi
+          Small Dictionary
         </h4>
         <p class="dark:text-gray-400">
           This is just a very tiny dictionary project which is developed for the
           aim of practicing. It contains over 155000 words with their
-          definitions, synonyms, antonyms and examples. <br />
-          Vue.js and tailwind are used on the frontend. <br />
+          definitions, synonyms, antonyms and examples.
+          Some other definitions and examples of the given words are also being loaded from the internet.<br />
+          Currently, only English to English words are supported, but other languages can be added easily in the future.<br /><br/>
+          Vue.js and tailwind are used on the frontend. <br/>
           NLTK, Beautiful Soup and a few other Python libraries are used on the
-          backend.
+          backend. <br />
+          
         </p>
       </div>
     </div>

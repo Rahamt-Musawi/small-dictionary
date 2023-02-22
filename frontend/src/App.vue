@@ -67,7 +67,7 @@
       </div>
 
       <AboutMe v-if="showAbout" />
-      <span class="text-center content-center">© 2023 Rahmatullah Musawi</span>
+      <span v-if="!loading" class="text-center content-center">© 2023 Rahmatullah Musawi</span>
     </div>
   </div>
 </template>
