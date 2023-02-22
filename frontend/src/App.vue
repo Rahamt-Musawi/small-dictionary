@@ -20,14 +20,18 @@
         </div>
       </div>
 
+
       <div
         class="w-full bg-white"
         v-if="word.length > 0 && !showAbout && not_found.length == 0"
       >
-        <!-- <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">definitions: </h2> -->
         <ul
           class="list-disc marker:text-blue-500 flex flex-col space-y-3 list-outside mt-7 p-10 leading-relaxed border-x-4 border-gray-100 text-gray-800 dark:text-gray-800"
         >
+
+
+<LoadingContent v-if="loading" />
+
           <li class="list-none">
             <p
               v-if="word[0]"
@@ -69,16 +73,18 @@ import { io } from "socket.io-client";
 import AppHeader from "./components/AppHeader.vue";
 import SearchForm from "./components/SearchForm.vue";
 import AboutMe from "./components/AboutMe.vue";
+import LoadingContent from "./components/LoadingContent.vue"
 const socket = io("http://localhost:5000");
 export default {
   name: "App",
-  components: { AppHeader, SearchForm, AboutMe },
+  components: { AppHeader, SearchForm, AboutMe, LoadingContent },
   data() {
     return {
       message: "welcome",
       word: "",
       showAbout: false,
       not_found: "",
+      loading: false,
     };
   },
 
@@ -86,14 +92,17 @@ export default {
     socket.on("connect", () => {
       console.log("connected to server");
       socket.emit("message", this.message);
+      this.loading=true
     });
 
     socket.on("not_found", (data) => {
       this.not_found = data;
       console.log(data);
+      this.loading=false
     });
     socket.on("response", (data) => {
       this.word = data;
+      this.loading=false
       console.log("received message: " + data);
     });
   },
@@ -102,6 +111,7 @@ export default {
     sendMessage(data) {
       socket.emit("message", data);
       this.not_found = "";
+      this.loading=true
     },
 
     aboutMe() {
