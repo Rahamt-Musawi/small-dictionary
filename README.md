@@ -8,7 +8,7 @@ This is a small web-based dictionary that is developed just for fun. But still i
 > Socket.io does the information exchange between backend and frontend. 
 
 
-![Here is a demo video of the application](https://github.com/Rahamt-Musawi/small-dictionary/issues/1#issue-1595668990)
+![Here is a demo video of the application]([https://github.com/Rahamt-Musawi/small-dictionary/issues/1#issue-1595668990](https://github.com/Rahamt-Musawi/small-dictionary/issues/2#issue-1595771757))
 
 
 
