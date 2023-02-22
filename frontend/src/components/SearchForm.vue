@@ -30,6 +30,7 @@
         <div class="relative w-full">
           <input
             v-model="word"
+            @focus="clear_text"
             type="search"
             id="search-dropdown"
             class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-500 dark:border-l-gray-500 dark:border-gray-400 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
@@ -78,6 +79,10 @@ export default {
   methods: {
     sendMessage() {
       this.$emit("search_for", this.word);
+    },
+
+    clear_text(){
+      this.word=''
     },
 
     onChange(e) {
