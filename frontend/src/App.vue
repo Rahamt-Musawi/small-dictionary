@@ -9,8 +9,8 @@
         v-if="!showAbout"
       />
 
-      <div role="alert" v-if="not_found.length > 0 && !showAbout">
-        <div class="bg-red-500 text-white font-bold rounded-t px-4 py-2">
+      <div role="alert" v-if="not_found.length > 0 && !showAbout" class="m-10">
+        <div class="bg-slate-400 text-white font-bold rounded-t px-4 py-2">
           Error
         </div>
         <div
@@ -19,18 +19,21 @@
           <p>{{ not_found }}</p>
         </div>
       </div>
+      
+      <LoadingContent v-if="loading" />
 
-
+    
       <div
         class="w-full bg-white"
         v-if="word.length > 0 && !showAbout && not_found.length == 0"
       >
+
         <ul
           class="list-disc marker:text-blue-500 flex flex-col space-y-3 list-outside mt-7 p-10 leading-relaxed border-x-4 border-gray-100 text-gray-800 dark:text-gray-800"
         >
 
 
-<LoadingContent v-if="loading" />
+
 
           <li class="list-none">
             <p
