@@ -13,7 +13,7 @@ This is a small web-based dictionary that is developed just for fun. But still i
 
 
 
-### Want to run on your local machine?
+### Want to test it on your local machine?
 <!-- TODO-IST:START -->
 1. Install dependencies on the frontend with **npm install** command
 2. Install python libraries needed on the backend such as NLTK, Beautiful Soup and Flask
