@@ -26,7 +26,7 @@
       >
         <!-- <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">definitions: </h2> -->
         <ul
-          class="list-disc marker:text-blue-500 flex flex-col space-y-3 list-outside mt-7 p-10 text-gray-800 dark:text-gray-800"
+          class="list-disc marker:text-blue-500 flex flex-col space-y-3 list-outside mt-7 p-10 leading-relaxed text-gray-800 dark:text-gray-800"
         >
           <li>
             <p

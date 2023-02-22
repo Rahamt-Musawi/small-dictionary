@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors:{
         "custom-text-bg": "#F3F9FE"
+        // "custom-text-bg": "#F6FAFD"
       }
     },
   },
