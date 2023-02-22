@@ -19,6 +19,7 @@
           Vue.js and tailwind are used on the frontend. <br/>
           NLTK, Beautiful Soup and a few other Python libraries are used on the
           backend. <br />
+          The information is exchanged between frontend and backend using socket.io.
           
         </p>
       </div>
