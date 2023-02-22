@@ -1,5 +1,5 @@
 # Small Dictionary
-This is a small web-based dictionary that is developed just for fun. But still it works decent.
+This is just a very tiny dictionary project which is developed for the aim of practicing. But it still works decent. It contains over 155000 words with their definitions, synonyms, antonyms and examples. Some other definitions and examples of the given words are also being loaded from the internet. Currently, only English to English words are supported, but other languages can be added easily in the future.Vue.js and tailwind are used on the frontend.
 
 > Vue.js and tailwind are used on the frontend.
 
