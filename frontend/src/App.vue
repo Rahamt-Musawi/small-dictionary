@@ -21,7 +21,7 @@
       </div>
 
       <div
-        class="w-full bg-blue-50"
+        class="w-full bg-custom-text-bg"
         v-if="word.length > 0 && !showAbout && not_found.length == 0"
       >
         <!-- <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">definitions: </h2> -->
@@ -36,20 +36,20 @@
               {{ wrd }}
             </p>
           </li>
-          <li>
+          <li v-if="definition || web_definition">
             <span class="text-indigo-900 font-semibold">Definitions </span>
             <p>{{ definition }}</p>
             <p>{{ web_definition }}</p>
           </li>
-          <li>
+          <li v-if="synonyms">
             <span class="text-indigo-900 font-semibold">Synonyms </span>
             <p>{{ synonyms }}</p>
           </li>
-          <li>
+          <li v-if="antonyms">
             <span class="text-indigo-900 font-semibold">Antonyms </span>
             <p>{{ antonyms }}</p>
           </li>
-          <li>
+          <li v-if="examples || web_examples">
             <span class="text-indigo-900 font-semibold">Examples </span>
             <p>{{ examples }}</p>
             <br />

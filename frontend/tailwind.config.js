@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "custom-text-bg": "#F3F9FE"
+      }
+    },
   },
   plugins: [],
 }
