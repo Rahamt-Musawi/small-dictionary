@@ -9,4 +9,5 @@ Socket.io does the information exchange between backend and frontend.
 
 
 Here is a demo video of the application
+
 https://github.com/Rahamt-Musawi/small-dictionary/issues/1#issue-1595668990
