@@ -36,12 +36,13 @@
 
 
           <li class="list-none">
-            <p
+            <span
               v-if="word[0]"
               class="text-2xl font-semibold text-gray-700"
             >
-              {{ wrd }}
-            </p>
+         
+              {{ searched_word }} 
+            </span><PronounceWord class="inline" v-if="word[0]" :pronounce_word="searched_word" />
           </li>
           <li v-if="definition || web_definition">
             <span class="text-red-900 font-semibold">Definitions </span>
@@ -77,10 +78,11 @@ import AppHeader from "./components/AppHeader.vue";
 import SearchForm from "./components/SearchForm.vue";
 import AboutMe from "./components/AboutMe.vue";
 import LoadingContent from "./components/LoadingContent.vue"
+import PronounceWord from "./components/PronounceWord.vue"
 const socket = io("http://localhost:5000");
 export default {
   name: "App",
-  components: { AppHeader, SearchForm, AboutMe, LoadingContent },
+  components: { AppHeader, SearchForm, AboutMe, LoadingContent, PronounceWord },
   data() {
     return {
       message: "welcome",
@@ -123,7 +125,7 @@ export default {
   },
 
   computed: {
-    wrd() {
+    searched_word() {
       return (
         this.word[0].word.charAt(0).toUpperCase() + this.word[0].word.slice(1)
       );
