@@ -12,7 +12,7 @@
         </h4>
         <p class="dark:text-gray-400">
           This is just a very tiny dictionary project which is developed for the
-          aim of practicing. It contains over 100000 words with their
+          aim of practicing. It contains over 155000 words with their
           definitions, synonyms, antonyms and examples. <br />
           Vue.js and tailwind are used on the frontend. <br />
           NLTK, Beautiful Soup and a few other Python libraries are used on the

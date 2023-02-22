@@ -96,7 +96,7 @@ def handle_message(data):
         socketio.emit("response", word_information)
 
     else:
-        socketio.emit("not_found", f"No definitions found for '{message}'. Please make sure if the spelling is correct.")
+        socketio.emit("not_found", f"No definitions found for '{message}'. Please make sure if the spelling is correct. Currently, only English single words are supported in this dictionary.")
         print(f"No definitions found for '{message}'")
 
     return 'Message sent from backend'
