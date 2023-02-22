@@ -1,5 +1,5 @@
 <template>
-  <div class="border-solid border-2 p-10 md:max-lg:flex m-auto">
+  <div class="md:max-lg:flex m-auto bg-slate-50">
     <div class="bg-slate-300 m-auto">
       <AppHeader @about="aboutMe" />
 
@@ -21,14 +21,14 @@
       </div>
 
       <div
-        class="w-full bg-custom-text-bg"
+        class="w-full bg-white"
         v-if="word.length > 0 && !showAbout && not_found.length == 0"
       >
         <!-- <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">definitions: </h2> -->
         <ul
-          class="list-disc marker:text-blue-500 flex flex-col space-y-3 list-outside mt-7 p-10 leading-relaxed text-gray-800 dark:text-gray-800"
+          class="list-disc marker:text-blue-500 flex flex-col space-y-3 list-outside mt-7 p-10 leading-relaxed border-x-4 border-gray-100 text-gray-800 dark:text-gray-800"
         >
-          <li>
+          <li class="list-none">
             <p
               v-if="word[0]"
               class="text-2xl font-semibold text-gray-700"
@@ -37,20 +37,20 @@
             </p>
           </li>
           <li v-if="definition || web_definition">
-            <span class="text-indigo-900 font-semibold">Definitions </span>
+            <span class="text-red-900 font-semibold">Definitions </span>
             <p>{{ definition }}</p>
             <p>{{ web_definition }}</p>
           </li>
           <li v-if="synonyms">
-            <span class="text-indigo-900 font-semibold">Synonyms </span>
+            <span class="text-red-900 font-semibold">Synonyms </span>
             <p>{{ synonyms }}</p>
           </li>
           <li v-if="antonyms">
-            <span class="text-indigo-900 font-semibold">Antonyms </span>
+            <span class="text-red-900 font-semibold">Antonyms </span>
             <p>{{ antonyms }}</p>
           </li>
           <li v-if="examples || web_examples">
-            <span class="text-indigo-900 font-semibold">Examples </span>
+            <span class="text-red-900 font-semibold">Examples </span>
             <p>{{ examples }}</p>
             <br />
             <p>{{ web_examples }}</p>
