@@ -84,7 +84,8 @@ def handle_message(data):
                     syn.append(lemma.name())    #add the synonyms
                 if lemma.antonyms():    #When antonyms are available, add them into the list
                     # ant.clear()
-                    ant.append(lemma.antonyms()[0].name())
+                    if lemma.antonyms()[0].name() not in ant:
+                        ant.append(lemma.antonyms()[0].name())
         
 
         word_information=[  
