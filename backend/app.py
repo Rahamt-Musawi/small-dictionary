@@ -56,12 +56,9 @@ def handle_message(data):
     web_word_example.clear()
 
     web_word_info = get_web_word_info(data)
-    # doc = nlp(web_word_info["definition"])
 
-    print(f"Word: {web_word_info['word']}")
-    print(f"Definition: {web_word_info['definition']}")
     web_word_def.append(web_word_info['definition'])
-    # print(f"Synonyms: {', '.join(web_word_info['synonyms'])}")
+
     print("Examples:")
     for example in web_word_info["examples"]:
         print(f"- {example.strip()}")
