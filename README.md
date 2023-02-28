@@ -12,5 +12,7 @@ This is just a very tiny dictionary project which is developed for the aim of pr
 
 
 # Installations
-<!-- TODO-IST:START -->
-<!-- TODO-IST:END -->
+1. **Backend**
+    - Python libraries such as Flask, NLTK, BeautifullSoup and Socket.io
+2. **Frontend**
+    - Vue.js, Tailwind and Socket.io client
