@@ -1,5 +1,5 @@
 # small-dictionary
-This is just a very tiny dictionary project which is developed for the aim of practicing. It contains over 155000 words with their definitions, synonyms, antonyms and examples. Some other definitions and examples of the given words are also being loaded from the internet. Currently, only English to English words are supported, but other languages can be added easily in the future.Vue.js and tailwind are used on the frontend.
+This is just a very tiny dictionary project which is developed for the aim of practicing. It contains over 155000 words with their definitions, synonyms, antonyms and examples. Some other definitions and examples of the given words are also being loaded from the internet. Currently, only English to English words are supported, but other languages can be added easily in the future.
 
 > Vue.js and tailwind are used on the frontend.
 
