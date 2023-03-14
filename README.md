@@ -8,7 +8,7 @@ This is just a very tiny dictionary project which is developed for the aim of pr
 > Socket.io does the information exchange between backend and frontend. 
 
 
-![Here is a demo video of the application](https://user-images.githubusercontent.com/115637390/222981679-6249c6e7-2052-4361-b722-2d55ffbc8239.mp4)
+![Here is a demo video of the application](https://user-images.githubusercontent.com/115637390/225010536-08767adb-f7af-4de8-897d-330abd9a7e55.mp4)
 
 
 # Installations
